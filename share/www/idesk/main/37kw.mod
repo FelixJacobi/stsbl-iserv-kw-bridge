@@ -9,7 +9,7 @@ db_user("kw_bridge");
 if (!secure_privilege("kw_exclude"))
 {
   $course_selections = [];
-  $res = db_query("SELECT k.id, k.name, k.ends, EXTRACT(EPOCH FROM k.ends) AS date
+  $res = db_query("SELECT k.id, k.name, EXTRACT(EPOCH FROM k.ends) AS date
       FROM kw k WHERE k.id IN (SELECT p.kw_id FROM kw_participants p WHERE 
       p.act IN (SELECT m.actgrp FROM members m WHERE m.actuser = $1))
       AND k.id NOT IN (SELECT u.kw_id FROM kw_user_choices u WHERE u.act = $2)
@@ -26,7 +26,9 @@ if (!secure_privilege("kw_exclude"))
     {
       echo "<li>";
       echo icon("block").'<a target="_blank" href="'.q("/iserv/kw/".$selection["id"]).'">'.q($selection['name'])."</a> - ".sprintf(_("Selection is ending at %s"), DateTimeToStr($selection['date']));
-      if ($selection['ends'] - time() < 7) {
+
+      # 604800 seonds = 7 days
+      if ($selection['date'] - time() < 604800) {
 	echo "<br /><strong>".icon("dlg-warn")._("This selection is ending in less than seven days.")."</strong>";
       }
       echo "</li>";
