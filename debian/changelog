@@ -1,3 +1,10 @@
+stsbl-iserv-kw-bridge (17.06.24-1) experimental; urgency=medium
+
+  [ Felix Jacobi ]
+  * Added advice on selections which are ending in less than seven days.
+
+ -- Stadtteilschule Blankenese <repository@stsbl.de>  Sat, 24 Jun 2017 18:13:42 +0200
+
 stsbl-iserv-kw-bridge (17.06.24-0) unstable; urgency=low
 
   * Initial Release.
