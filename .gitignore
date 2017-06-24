@@ -1,0 +1,5 @@
+debian/stsbl-iserv-kw-bridge/*
+debian/stsbl-iserv-kw-bridge.substvars
+debian/stsbl-iserv-kw-bridge.debhelper.log
+debian/files
+debian/debhelper-build-stamp

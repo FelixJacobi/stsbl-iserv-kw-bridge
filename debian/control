@@ -1,0 +1,20 @@
+Source: stsbl-iserv-kw-bridge
+Section: misc
+Priority: extra
+Maintainer: Stadtteilschule Blankenese <repository@stsbl.de>
+Build-Depends: debhelper (>= 9)
+Build-Depends-Indep: iserv3-dev
+Standards-Version: 3.9.5
+
+Package: stsbl-iserv-kw-bridge
+Architecture: all
+Depends: iserv-portal, althaus-iserv-kw
+Description: Anzeige ausstehender Kurswahlen in IServ 2
+ Dieses Modul zeigt Benutzern, für die eine Kurswahl im Kurswahlen-Modul von Althaus.IT (https://althaus.it/iserv/kurswahlen) 
+ aussteht, einen entsprechen Hinweis in IServ 2 an.
+ .
+ https://it.stsbl.de/wp-content/uploads/2017/06/stsbl-iserv-kw-bridge.png
+ .
+ Dies ermöglicht es Schulen, die das Kurswahl-Modul bereits benutzen, aber noch hautpsächlich mit IServ 2 arbeiten, ihre 
+ Schüler, die sich nur über IServ 2 anmelden, dennoch zeitnah über die Kurswahl zu informieren.
+Tag: suite::iserv:portal, role::plugin, implemented-in::php
