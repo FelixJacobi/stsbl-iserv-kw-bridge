@@ -1,0 +1,13 @@
+msgid "Outstanding course selections"
+msgstr "Ausstehende Kurswahlen"
+
+msgid "Selection is ending at %s"
+msgstr "Wahl endet am %s"
+
+msgid "Open course selections in IServ 3"
+msgstr "Kurswahlen in IServ 3 öffnen"
+
+msgid "You have to choose your course in the following selection:"
+msgid_plural "You have to choose your courses in the following selections:"
+msgstr[0] "Sie müssen Ihren Kurs in der folgenden Wahl wählen:"
+msgstr[1] "Sie müssen Ihre Kurse in den folgenden Wahlen wählen:"
