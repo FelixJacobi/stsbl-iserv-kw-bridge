@@ -11,3 +11,6 @@ msgid "You have to choose your course in the following selection:"
 msgid_plural "You have to choose your courses in the following selections:"
 msgstr[0] "Sie müssen Ihren Kurs in der folgenden Wahl wählen:"
 msgstr[1] "Sie müssen Ihre Kurse in den folgenden Wahlen wählen:"
+
+msgid "This selection is ending in less than seven days."
+msgstr "Diese Wahl endet in weniger als sieben Tagen."
