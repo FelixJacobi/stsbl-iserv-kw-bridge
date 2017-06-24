@@ -1,3 +1,10 @@
+stsbl-iserv-kw-bridge (17.06.24-2) experimental; urgency=medium
+
+  [ Felix Jacobi ]
+  * Fixed time condition.
+
+ -- Stadtteilschule Blankenese <repository@stsbl.de>  Sat, 24 Jun 2017 18:46:18 +0200
+
 stsbl-iserv-kw-bridge (17.06.24-1) experimental; urgency=medium
 
   [ Felix Jacobi ]
