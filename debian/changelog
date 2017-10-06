@@ -1,3 +1,9 @@
+stsbl-iserv-kw-bridge (17.10.06-0) experimental; urgency=medium
+
+  * Renamed sql file to fix statement order.
+
+ -- Felix Jacobi <felix.jacobi@iserv.eu>  Fri, 06 Oct 2017 03:38:19 +0200
+
 stsbl-iserv-kw-bridge (17.06.24-2) experimental; urgency=medium
 
   [ Felix Jacobi ]
