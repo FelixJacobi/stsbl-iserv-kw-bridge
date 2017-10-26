@@ -1,3 +1,12 @@
+stsbl-iserv-kw-bridge (17.10.26-1) experimental; urgency=medium
+
+  * Fixed too long extended description.
+  * Added explicit db user.
+  * Fixed too long extended description.
+  * Added explicit db user.
+
+ -- Felix Jacobi <felix.jacobi@stsbl.de>  Thu, 26 Oct 2017 02:48:53 +0200
+
 stsbl-iserv-kw-bridge (17.10.06-0) experimental; urgency=medium
 
   * Renamed sql file to fix statement order.
