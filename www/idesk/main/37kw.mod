@@ -25,7 +25,7 @@ if (!secure_privilege("kw_exclude"))
     foreach ($course_selections as $selection)
     {
       echo "<li>";
-      echo icon("block").'<a target="_blank" href="'.q("/iserv/kw/".$selection["id"]).'">'.q($selection['name'])."</a> - ".sprintf(_("Selection is ending at %s"), DateTimeToStr($selection['date']));
+      echo icon("block").'<a target="_blank" href="'.q("/iserv/courseselection/".$selection["id"]).'">'.q($selection['name'])."</a> - ".sprintf(_("Selection is ending at %s"), DateTimeToStr($selection['date']));
 
       # 604800 seonds = 7 days
       if ($selection['date'] - time() < 604800) {
@@ -33,6 +33,6 @@ if (!secure_privilege("kw_exclude"))
       }
       echo "</li>";
     }
-    _GroupBox('<a class="btn" target="_blank" href="/iserv/kw">'.icon("block")._('Open course selections in IServ 3').'</a>');
+    _GroupBox('<a class="btn" target="_blank" href="/iserv/courseselection">'.icon("block")._('Open course selections in IServ 3').'</a>');
   }
 }
