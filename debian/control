@@ -12,6 +12,7 @@ Depends: ${misc:Depends},
   ${perl:Depends},
   iserv-course-selection,
   iserv-portal,
+Xb-Private-IServ-Revision: ${iserv:Revision}
 Description: Anzeige ausstehender Kurswahlen in IServ 2
  Dieses Modul zeigt Benutzern, für die eine Kurswahl im Kurswahlen-Modul
  aussteht, einen entsprechen Hinweis in IServ 2 an.
