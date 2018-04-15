@@ -1,3 +1,10 @@
+stsbl-iserv-kw-bridge (18.04.15-2) experimental; urgency=medium
+
+  * Fixed build
+  * Fixed control
+
+ -- Felix Jacobi <felix.jacobi@stsbl.de>  Sun, 15 Apr 2018 18:24:44 +0200
+
 stsbl-iserv-kw-bridge (18.04.15-1) experimental; urgency=medium
 
   * Updated package for iserv-course-selection
