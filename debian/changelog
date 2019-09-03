@@ -1,3 +1,15 @@
+stsbl-iserv-kw-bridge (19.09.03-1) experimental; urgency=medium
+
+  * Updated source format
+  * Trigger self removal
+
+  iserv: Die Weiterentwicklung dieses Moduls wurde im Rahmen des Auslaufens der
+    Unterstützung der alten Weboberfläche eingestellt. Entsprechend wurde das
+    Modul nun entfernt. Das Kurswahlen-Modul selber ist davon nicht betroffen
+    und ist wie gewohnt über die aktuelle Weboberfläche erreichbar.
+
+ -- Felix Jacobi <Felix@jacobi-hamburg.net>  Tue, 03 Sep 2019 21:06:14 +0200
+
 stsbl-iserv-kw-bridge (18.04.15-2) experimental; urgency=medium
 
   * Fixed build
