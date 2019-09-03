@@ -1,0 +1,17 @@
+# prevent removing of iserv-course-selection as it is maybe marked as "automatically
+# "installed as it was installed as a dependency of stsbl-iserv-kw-bridge which is
+# removed below.
+Test "mark iserv-course-selection as manually installed"
+  ! apt-mark showauto | grep -qE "^iserv-course-selection$"
+  ---
+  apt-mark manual iserv-course-selection
+
+Test "remove stsbl-iserv-kw-bridge"
+  ! dpkg-query --showformat='${Status}\n' --show \
+      'stsbl-iserv-kw-bridge' 2> /dev/null \
+      | grep -qE '(install|hold) ok installed'
+  ---
+  /usr/lib/iserv/aptitude_auto remove stsbl-iserv-kw-bridge &&
+      { [ -x "/usr/lib/iserv/news_changelog" ] && /usr/lib/iserv/news_changelog; } && 
+      { [ -n "$ISERVCHK_TOP_PID" ] && kill -USR1 "$ISERVCHK_TOP_PID"; }
+

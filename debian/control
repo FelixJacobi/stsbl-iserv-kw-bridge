@@ -22,4 +22,4 @@ Description: Anzeige ausstehender Kurswahlen in IServ 2
  Dies ermöglicht es Schulen, die das Kurswahl-Modul bereits benutzen, aber noch
  hautpsächlich mit IServ 2 arbeiten, ihre Schüler, die sich nur über IServ 2
  anmelden, dennoch zeitnah über die Kurswahl zu informieren.
-Tag: suite::iserv:portal, role::plugin, implemented-in::php
+Tag: suite::iserv:portal, implemented-in::php
